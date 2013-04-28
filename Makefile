@@ -121,6 +121,9 @@ cffdump: cffdump.c disasm-a2xx.c disasm-a3xx.c envytools/rnn/librnn.a envytools/
 
 pgmdump: pgmdump.c disasm-a2xx.c disasm-a3xx.c
 	gcc -g $(CFLAGS) -Wno-packed-bitfield-compat -I. $^ -o $@
+
 zdump: zdump.c
 	gcc -g $(CFLAGS) -Wall -Wno-packed-bitfield-compat -I. $^ -o $@
 
+fwdump: fwdump.c
+	gcc -g $(CFLAGS) -Wall -Wno-packed-bitfield-compat -I. $^ -o $@
